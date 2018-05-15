@@ -15,9 +15,13 @@ if (args.help || !args.file) {
   printHelp();
   process.exit(1);
 }
-var name = args.name;
-
 
 var hello = require('./helloworld.js');
-var contents = hello.say(args.file);
-console.log(contents.toString());
+
+hello.say(args.file)
+  .val(function (contents) {
+    console.log(contents.toString());
+  })
+  .or(function (err) {
+    console.error(err);
+  })
