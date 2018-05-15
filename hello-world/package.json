@@ -1,12 +1,16 @@
 {
   "name": "hello-world",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1-a",
+  "description": "hello world",
   "main": "1.js",
+  "keywords": [
+    "hello",
+    "world"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "SPDUK",
   "license": "ISC",
   "dependencies": {
     "asynquence": "^0.10.2",
